@@ -20,4 +20,11 @@ router.post('/new', (req,res) => {
     console.log(req.body)
 })
 
+router.get("/:id/edit" , (req,res)=>{
+
+})
+router.put("/:id" , (req, res)=>{
+    
+})
+
 module.exports = router
