@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styleSheet/style.css">
+</head>
+<body>
+    <header> <h1>Edit Form</h1></header>
+    <section class="container">
+        <div class="form">
+          <form action="/users/<%= users.id%>" method="POST">
+            <input type="text" name="name" placeholder="enter your name" value="<%= users.name %>"><br>
+           <input type="number" name="age" placeholder="enter your age" value="<%= users.age %>"><br>
+            <input type="email" name="email" placeholder="enter your email" value="<%= users.email %>"><br>
+            <input type="text" name="bio" placeholder="Bio" value="<%= users.bio %>"><br>
+            <div class="submit">
+              <button class="update-btn">Update Form</button>
+            </div>
+          </form>
+        </div>
+</section>
+</body>
+</html>
